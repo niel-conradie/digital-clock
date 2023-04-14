@@ -20,15 +20,12 @@
 
   /* COLORS */
   --BG-COLOR: rgb(0, 0, 0);
-  --BG-IMAGE: url(../images/1.jpg);
+  --BG-IMAGE: url(../images/background-image.jpg);
   --FONT-COLOR: rgb(255, 255, 255);
   --FONT-SHADOWS: 2px 2px 4px rgb(0, 0, 0, 0.75);
   --CLOCK-SPAN-BG-COLOR: rgb(106, 90, 205);
   --CLOCK-TEXT-BG-COLOR: rgb(0, 0, 139);
   --CLOCK-AMPM-BG-COLOR: rgb(0, 128, 0);
-
-  /* STANDARD MARGIN */
-  --MARGIN: 5px;
 }
 
 /* || GENERAL STYLES */
@@ -69,7 +66,7 @@ h2 {
 .clock__div {
   position: relative;
 
-  margin: var(--MARGIN);
+  margin: 5px;
 }
 
 .clock__span {
