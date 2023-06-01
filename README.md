@@ -38,21 +38,21 @@ npm install
 
 ## **Usage**
 
-Use these commands for your desired outcome :
+Use the following commands for your desired outcome:
 
-- To start a development server, run the following command.
+- Starting a development server, run the following command.
 
 ```bash
 npm run dev
 ```
 
-- To start a production build, run the following command.
+- Starting a production build, run the following command.
 
 ```bash
 npm run build
 ```
 
-- To start a production preview server, run the following command.
+- Starting a production preview server, run the following command.
 
 ```bash
 npm run preview
