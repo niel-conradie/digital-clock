@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+}
+
+h1 {
+  font-size: var(--font-size-heading-primary);
+  text-shadow: var(--text-shadow-color-primary);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-heading-secondary);
+}

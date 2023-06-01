@@ -1,0 +1,62 @@
+@use "../abstracts" as *;
+
+:root {
+  // | Font Family
+  @each$key, $value in $font-family {
+    --font-family-#{$key}: #{$value};
+  }
+
+  // | Font Size
+  @each $screen-size, $font-size in $font-scale {
+    @if $screen-size == small {
+      @each$key, $value in $font-size {
+        --font-size-#{$key}: #{$value};
+      }
+    }
+    @if $screen-size == medium {
+      @include breakpoint(medium) {
+        @each$size, $value in $font-size {
+          --font-size-#{$size}: #{$value};
+        }
+      }
+    }
+    @if $screen-size == large {
+      @include breakpoint(large) {
+        @each$size, $value in $font-size {
+          --font-size-#{$size}: #{$value};
+        }
+      }
+    }
+  }
+
+  // | Font Weight
+  @each$key, $value in $font-weight {
+    --font-weight-#{$key}: #{$value};
+  }
+
+  // | Typography Variables
+  @each $keys, $values in $typography-variables {
+    @each$key, $value in $values {
+      --#{$keys}-#{$key}: #{$value};
+    }
+  }
+
+  // | Colors
+  @each $keys, $values in $colors {
+    @each$key, $value in $values {
+      --#{$keys}-#{$key}: #{$value};
+    }
+  }
+
+  // | Theme Variables
+  @each$key, $value in $color-variables {
+    --#{$key}-color: #{$value};
+  }
+
+  // | Default Variables
+  @each $keys, $values in $variables {
+    @each$key, $value in $values {
+      --#{$keys}-#{$key}: #{$value};
+    }
+  }
+}

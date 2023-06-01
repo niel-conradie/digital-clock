@@ -1,0 +1,35 @@
+{
+  "name": "digital-clock",
+  "description": "Digital Clock written in HTML, SCSS & JavaScript",
+  "version": "1.0.0",
+  "author": "Niel Conradie",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niel-conradie/digital-clock.git"
+  },
+  "homepage": "https://github.com/niel-conradie/digital-clock#readme",
+  "bugs": {
+    "url": "https://github.com/niel-conradie/digital-clock/issues"
+  },
+  "keywords": [
+    "autoprefixer",
+    "cssnano",
+    "postcss",
+    "sass",
+    "vite"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.24",
+    "sass": "^1.62.1",
+    "vite": "^4.3.9"
+  }
+}

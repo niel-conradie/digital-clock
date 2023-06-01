@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Digital Clock written in HTML, SCSS & JavaScript"
+    />
+    <meta name="author" content="Niel Conradie" />
+
+    <title>Clock</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Normalize CSS v.8.0.1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/scss/main.scss" />
+
+    <!-- JavaScript -->
+    <script type="module" src="/assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Digital Clock</h1>
+    </header>
+
+    <main>
+      <div class="clock">
+        <div class="clock__content">
+          <span id="hour" class="clock__span">00</span>
+          <span class="clock__span clock__label">Hours</span>
+        </div>
+
+        <div class="clock__content">
+          <span id="minutes" class="clock__span">00</span>
+          <span class="clock__span clock__label">Minutes</span>
+        </div>
+
+        <div class="clock__content">
+          <span id="seconds" class="clock__span">00</span>
+          <span class="clock__span clock__label">Seconds</span>
+        </div>
+
+        <div class="clock__content">
+          <span id="ampm" class="clock__span clock__span-ampm">AM</span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

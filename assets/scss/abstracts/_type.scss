@@ -1,0 +1,63 @@
+@use "functions" as *;
+
+$font-family: (
+  primary: "'Roboto', sans-serif",
+  secondary: "'Roboto', sans-serif",
+);
+
+$font-weight: (
+  regular: 400,
+  medium: 500,
+  bold: 700,
+);
+
+$font-scale: (
+  small: (
+    100: rem(12),
+    200: rem(14),
+    300: rem(16),
+    400: rem(20),
+    500: rem(24),
+    600: rem(28),
+    700: rem(32),
+    800: rem(36),
+    900: rem(50),
+  ),
+
+  medium: (
+    100: rem(15),
+    200: rem(17.5),
+    300: rem(20),
+    400: rem(25),
+    500: rem(30),
+    600: rem(35),
+    700: rem(40),
+    800: rem(45),
+    900: rem(62.5),
+  ),
+
+  large: (
+    100: rem(18),
+    200: rem(21),
+    300: rem(24),
+    400: rem(30),
+    500: rem(36),
+    600: rem(44),
+    700: rem(48),
+    800: rem(54),
+    900: rem(75),
+  ),
+);
+
+$typography-variables: (
+  font-family: (
+    body: var(--font-family-primary),
+    heading: var(--font-family-secondary),
+  ),
+
+  font-size: (
+    body: var(--font-size-300),
+    heading-primary: var(--font-size-600),
+    heading-secondary: var(--font-size-500),
+  ),
+);

@@ -1,0 +1,81 @@
+@use "../abstracts" as *;
+
+.clock {
+  display: flex;
+
+  &__content {
+    position: relative;
+    margin: rem(5);
+
+    @include breakpoint(medium) {
+      margin: rem(7.5);
+    }
+
+    @include breakpoint(large) {
+      margin: rem(10);
+    }
+  }
+
+  &__span {
+    width: rem(80);
+    height: rem(80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--clock-span-background-color-primary);
+    opacity: 0.875;
+
+    font-size: var(--font-size-900);
+    text-shadow: var(--text-shadow-color-primary);
+
+    @include breakpoint(medium) {
+      width: rem(100);
+      height: rem(100);
+    }
+
+    @include breakpoint(large) {
+      width: rem(120);
+      height: rem(120);
+    }
+  }
+
+  &__label {
+    height: rem(30);
+
+    background-color: var(--clock-label-background-color-primary);
+
+    font-size: var(--font-size-100);
+    text-transform: uppercase;
+    letter-spacing: rem(2);
+
+    @include breakpoint(medium) {
+      height: rem(37.5);
+    }
+
+    @include breakpoint(large) {
+      height: rem(45);
+    }
+  }
+
+  &__span-ampm {
+    position: absolute;
+    bottom: 0;
+    width: rem(45);
+    height: rem(30);
+
+    background-color: var(--clock-ampm-background-color-primary);
+
+    font-size: var(--font-size-300);
+
+    @include breakpoint(medium) {
+      width: rem(56.25);
+      height: rem(37.5);
+    }
+
+    @include breakpoint(large) {
+      width: rem(67.5);
+      height: rem(45);
+    }
+  }
+}
