@@ -23,11 +23,13 @@
     align-items: center;
     justify-content: center;
 
-    background-color: var(--clock-span-background-color-primary);
+    background-color: var(--clock-span-bg-color);
     opacity: 0.875;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
 
     font-size: var(--font-size-900);
-    text-shadow: var(--text-shadow-color-primary);
+    text-shadow: var(--text-shadow);
 
     @include breakpoint(medium) {
       width: rem(100);
@@ -43,7 +45,11 @@
   &__label {
     height: rem(30);
 
-    background-color: var(--clock-label-background-color-primary);
+    background-color: var(--clock-label-bg-color);
+    border-top-left-radius: rem(0);
+    border-top-right-radius: rem(0);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
 
     font-size: var(--font-size-100);
     text-transform: uppercase;
@@ -58,15 +64,17 @@
     }
   }
 
-  &__span-ampm {
+  &__ampm {
     position: absolute;
     bottom: 0;
     width: rem(45);
     height: rem(30);
 
-    background-color: var(--clock-ampm-background-color-primary);
+    background-color: var(--clock-ampm-bg-color);
+    border-radius: var(--border-radius);
 
     font-size: var(--font-size-300);
+    letter-spacing: rem(1);
 
     @include breakpoint(medium) {
       width: rem(56.25);

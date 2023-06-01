@@ -4,22 +4,28 @@ $variables: (
   // || Body
   body:
     (
-      background-color-primary: var(--color-gray-900),
-      text-color-primary: var(--color-gray-100),
-      background-image: url(/images/background-image.jpg),
+      bg-color: var(--color-gray-900),
+      bg-image: url(/images/background-image.jpg),
+      color: var(--color-gray-100),
     ),
 
-  // || Text Shadows
+  // || Border Radius
+  border:
+    (
+      radius: rem(10),
+    ),
+
+  // || Text Shadow
   text:
     (
-      shadow-color-primary: rem(2) rem(2) rem(5) var(--color-black-800),
+      shadow: rem(2) rem(2) rem(5) var(--color-black-900),
     ),
 
-  // || Clock
+  // || Clock Colors
   clock:
     (
-      span-background-color-primary: var(--color-purple-500),
-      label-background-color-primary: var(--color-blue-500),
-      ampm-background-color-primary: var(--color-green-600),
+      span-bg-color: var(--color-purple-450),
+      label-bg-color: var(--color-blue-450),
+      ampm-bg-color: var(--color-green-550),
     )
 );

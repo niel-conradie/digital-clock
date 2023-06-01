@@ -11,7 +11,8 @@ h6 {
 
 h1 {
   font-size: var(--font-size-heading-primary);
-  text-shadow: var(--text-shadow-color-primary);
+  text-shadow: var(--text-shadow);
+  letter-spacing: rem(2);
 }
 
 h2,
