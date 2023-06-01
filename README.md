@@ -1,6 +1,6 @@
 # **Digital Clock**
 
-**Digital Clock written in HTML, CSS & JavaScript.**
+**Digital Clock written in HTML, SCSS & JavaScript.**
 
 A digital clock that display the current time in analog using the local system time.
 
@@ -8,13 +8,13 @@ A digital clock that display the current time in analog using the local system t
 
 ## **Requirements**
 
-- [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) or [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+- [Node.js](https://nodejs.org/en)
 
 ---
 
 ## **Installation**
 
-To start, clone the repository to your local computer.
+Digital Clock can be installed via [npm](https://www.npmjs.com/). To start, clone the repository to your local computer and change into the proper directory, then use the command to install required dependencies.
 
 - **Clone Repository**
 
@@ -22,11 +22,41 @@ To start, clone the repository to your local computer.
 git clone https://github.com/niel-conradie/digital-clock.git
 ```
 
+- **Change Directory**
+
+```bash
+cd digital-clock
+```
+
+- **Install Dependencies**
+
+```bash
+npm install
+```
+
 ---
 
 ## **Usage**
 
-- Using the [index.html](https://github.com/niel-conradie/digital-clock/blob/master/digital-clock/index.html) file run one of the two required extension to preview the project.
+Use these commands for your desired outcome :
+
+- To start a development server, run the following command.
+
+```bash
+npm run dev
+```
+
+- To start a production build, run the following command.
+
+```bash
+npm run build
+```
+
+- To start a production preview server, run the following command.
+
+```bash
+npm run preview
+```
 
 ---
 
