@@ -24,9 +24,6 @@
     justify-content: center;
 
     background-color: var(--clock-span-bg-color);
-    opacity: 0.875;
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
 
     font-size: var(--font-size-900);
     text-shadow: var(--text-shadow);
@@ -46,10 +43,9 @@
     height: rem(30);
 
     background-color: var(--clock-label-bg-color);
-    border-top-left-radius: rem(0);
-    border-top-right-radius: rem(0);
-    border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
+    border: var(--border-solid);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 
     font-size: var(--font-size-100);
     text-transform: uppercase;
@@ -71,7 +67,9 @@
     height: rem(30);
 
     background-color: var(--clock-ampm-bg-color);
+    border: var(--border-solid);
     border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 
     font-size: var(--font-size-300);
     letter-spacing: rem(1);

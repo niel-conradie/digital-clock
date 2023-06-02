@@ -13,6 +13,7 @@ $variables: (
   border:
     (
       radius: rem(10),
+      solid: rem(1) solid var(--color-gray-100),
     ),
 
   // || Text Shadow
@@ -21,11 +22,17 @@ $variables: (
       shadow: rem(2) rem(2) rem(5) var(--color-black-900),
     ),
 
+  // || Box Shadow
+  box:
+    (
+      shadow: rem(1) rem(1) rem(4) var(--color-black-900),
+    ),
+
   // || Clock Colors
   clock:
     (
-      span-bg-color: var(--color-purple-450),
-      label-bg-color: var(--color-blue-450),
-      ampm-bg-color: var(--color-green-550),
+      span-bg-color: transparent,
+      label-bg-color: transparent,
+      ampm-bg-color: transparent,
     )
 );
