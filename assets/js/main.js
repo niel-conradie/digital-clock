@@ -36,3 +36,29 @@ function updateClock() {
 
 // Call function.
 updateClock();
+
+// ----------------------------------------------------------------------------------------------- //
+
+// Get element by id and store in immutable variable.
+const bodyElement = document.querySelector("body");
+
+// Event Listeners
+bodyElement.addEventListener("keydown", () => {
+  const xPosition = Math.floor(Math.random() * 2000) + 1;
+  const yPosition = -50;
+  const size = Math.floor(Math.random() * 75) + 1;
+  const randomNumber = Math.floor(Math.random() * 3) + 1;
+  const spanElement = document.createElement("span");
+
+  spanElement.classList.add("snowflake");
+  spanElement.classList.add("snowflake--" + randomNumber);
+  spanElement.style.left = xPosition + "px";
+  spanElement.style.top = yPosition + "px";
+  spanElement.style.width = size + "px";
+  spanElement.style.height = size + "px";
+  bodyElement.appendChild(spanElement);
+
+  setTimeout(() => {
+    spanElement.remove();
+  }, 7500);
+});

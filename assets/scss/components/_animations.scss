@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+
+span.snowflake {
+  position: absolute;
+
+  background-size: cover;
+  pointer-events: none;
+  animation: animate 30s linear;
+
+  &--1 {
+    background-image: url("/images/snowflake-1.png");
+  }
+
+  &--2 {
+    background-image: url("/images/snowflake-2.png");
+  }
+
+  &--3 {
+    background-image: url("/images/snowflake-3.png");
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    filter: blur(rem(1));
+  }
+
+  100% {
+    transform: translate(-50%, 10000%);
+    opacity: 0.25;
+    filter: blur(rem(5));
+  }
+}
